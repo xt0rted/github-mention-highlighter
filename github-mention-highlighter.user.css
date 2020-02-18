@@ -1,0 +1,36 @@
+/* ==UserStyle==
+@name           GitHub Mention Highlighter
+@namespace      github.com/xt0rted
+@version        1.0.0
+@description    Highlight @mentions on GitHub so they're easier to see
+@author         xt0rted
+@homepageURL    https://github.com/xt0rted/github-mention-highlighter
+@supportURL     https://github.com/xt0rted/github-mention-highlighter/issues
+@updateURL      https://raw.githubusercontent.com/xt0rted/github-mention-highlighter/master/github-mention-highlighter.user.css
+@license        CC-BY-SA-4.0
+
+@advanced text user-name "GitHub User Name" ""
+==/UserStyle== */
+@-moz-document domain("github.com") {
+  .user-mention[data-hovercard-type],
+  .network a + a[data-hovercard-url="/users//*[[user-name]]*//hovercard" i] {
+    border-radius: 3px;
+    padding: 0 2px 1px 2px;
+  }
+  .user-mention[data-hovercard-type] {
+    color: rgb(18, 100, 163)!important;
+    background:rgba(29, 155, 209, .1) !important;
+  }
+  .user-mention[data-hovercard-type]:hover,
+  .user-mention[data-hovercard-type]:focus {
+    color: rgb(11, 76, 140) !important;
+    background: rgba (29, 155, 209, .2) !important;
+  }
+
+  /* Mentions of yourself */
+  .user-mention[data-hovercard-url="/users//*[[user-name]]*//hovercard" i] /* comments, hovercards, etc. */,
+  .network a + a[data-hovercard-url="/users//*[[user-name]]*//hovercard" i] /* network graph */ {
+    color: rgb(18, 100, 163) !important;
+    background: rgba(242, 199, 68, .2) !important;
+  }
+}
