@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           GitHub Dark Mention Highlighter
 @namespace      github.com/xt0rted
-@version        1.0.0
+@version        1.0.1
 @description    Highlight @mentions on GitHub so they're easier to see
 @author         xt0rted
 @homepageURL    https://github.com/xt0rted/github-mention-highlighter
@@ -9,7 +9,7 @@
 @updateURL      https://raw.githubusercontent.com/xt0rted/github-mention-highlighter/master/github-dark-mention-highlighter.user.css
 @license        CC-BY-SA-4.0
 
-@advanced text user-name "GitHub User Name" ""
+@advanced text user-name "GitHub Username" ""
 ==/UserStyle== */
 @-moz-document domain("github.com") {
   .user-mention[data-hovercard-type],
