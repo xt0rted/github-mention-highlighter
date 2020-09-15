@@ -14,7 +14,7 @@
 @-moz-document domain("github.com") {
   .user-mention[data-hovercard-type],
   .network a + a[data-hovercard-url="/users//*[[user-name]]*//hovercard" i] {
-    border-radius: 3px;
+    border-radius: 6px;
     padding: 0 2px 1px 2px;
   }
   .user-mention[data-hovercard-type] {
